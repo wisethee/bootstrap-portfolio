@@ -85,9 +85,12 @@ h6 span {
   border: 6px solid #e2e2e2;
 }
 
+/* About */
+#about img {
+  border-radius: 1rem;
+}
+
 @media (max-width: 767px) {
-
-
   .jumbotron .col-md-7 {
     order: 1;
     align-items: center;
@@ -99,6 +102,10 @@ h6 span {
 
   .jumbotron .col-md-5 {
     order: 0;
+    margin-bottom: 2rem;
+  }
+
+  #about img {
     margin-bottom: 2rem;
   }
 }
