@@ -33,6 +33,7 @@ section {
   border-color: transparent;
   color: #ffffff !important;
   background-color: #F54864 !important;
+  box-shadow: 0 0 0 .2rem rgba(245, 72, 101, .2) !important;
 }
 
 .btn-outline-secondary:focus {
@@ -172,7 +173,59 @@ h6 span {
   font-size: 1.2rem;
 }
 
-/* My Works */
+/* Footer */
+footer {
+  padding: 3rem 0;
+}
+footer p {
+  font-size: 0.875rem;
+}
+
+footer .image-container {
+  cursor: pointer;
+  display: flex;
+  padding: .5rem;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #F54864;
+}
+
+footer .image-container:first-child {
+  margin-right: 2rem;
+}
+
+footer .image-container:hover {
+  background-color: #F54864;
+  box-shadow: 0 0 0 .2rem rgba(245, 72, 101, .2) !important;
+}
+
+footer .image-container:first-child a {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+footer .image-container:nth-child(1):hover svg {
+  stroke: #ffffff;
+}
+
+footer .image-container:nth-child(2):hover svg {
+  fill: #ffffff;
+}
+
+
+footer .image-container svg {
+  width: 24px;
+  height: 24px;
+}
+
+footer .image-container:first-child svg {
+  stroke: #F54864;
+}
+
+footer .image-container:nth-child(2) svg {
+  fill: #F54864;
+}
 
 
 @media (max-width: 767px) {
@@ -207,7 +260,7 @@ h6 span {
     max-width: 800px;
   }
 
-  #contact .container {
+  #contact .container, #footer {
     max-width: 480px;
   }
 
