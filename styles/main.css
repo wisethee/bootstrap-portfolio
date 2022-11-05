@@ -8,6 +8,48 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
+p {
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.btn {
+  max-width: 46%;
+  white-space: nowrap
+}
+
+h1, h2, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+h6 {
+  margin-bottom: 2rem;
+}
+
+h1 span,
+h2 span,
+h6 span {
+  background: linear-gradient(45deg, #F54864 14.64%, #FF8B68 85.36%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 /* Navbar */
 .navbar {
   max-width: 90vw;
@@ -33,5 +75,30 @@ body {
 /* Hero */
 .jumbotron {
   margin-top: -6.625rem;
-  height: 90vh;
+  height: 100%;
+  padding-top: 10.625rem;
+  margin-bottom: 0;
+}
+
+.jumbotron img {
+  border-radius: 50%;
+  border: 6px solid #e2e2e2;
+}
+
+@media (max-width: 767px) {
+
+
+  .jumbotron .col-md-7 {
+    order: 1;
+    align-items: center;
+  }
+
+  .jumbotron .col-md-7 p {
+    text-align: center;
+  }
+
+  .jumbotron .col-md-5 {
+    order: 0;
+    margin-bottom: 2rem;
+  }
 }
