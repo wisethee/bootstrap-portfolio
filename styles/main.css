@@ -1,0 +1,37 @@
+/* Navbar */
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  max-width: 90vw;
+}
+
+.navbar.sticky-top {
+  top: 1rem;
+}
+
+.navbar img {
+  width: 72%;
+  height: auto;
+}
+
+.navbar .nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.navbar .nav-item a {
+  font-weight: 500;
+}
+
+/* Hero */
+.jumbotron {
+  margin-top: -6.625rem;
+  height: 90vh;
+}
