@@ -21,9 +21,18 @@ section {
   padding: 3rem 0;
 }
 
-.btn {
+.btn-outline-secondary {
   max-width: 46%;
-  white-space: nowrap
+  white-space: nowrap;
+  border-radius: 24px;
+  border-color: #F54864;
+  color: #F54864;
+}
+
+.btn-outline-secondary:hover {
+  border-color: transparent;
+  color: #ffffff !important;
+  background-color: #F54864 !important;
 }
 
 h1, h2, h3, h6 {
