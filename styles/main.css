@@ -26,7 +26,7 @@ section {
   white-space: nowrap
 }
 
-h1, h2, h6 {
+h1, h2, h3, h6 {
   font-weight: 700;
   line-height: 1.2;
 }
@@ -90,6 +90,61 @@ h6 span {
   border-radius: 1rem;
 }
 
+/* My Skills */
+.card-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-skill .percent {
+  position: relative;
+}
+
+.card-skill svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-90deg);
+}
+
+.card-skill svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.card-skill svg circle:last-of-type {
+  stroke-dasharray: 314px;
+  stroke-dashoffset: calc(314px - ((314px * var(--percent)) / 100));
+  stroke: #F54865;
+}
+
+.card-skill .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-skill .number h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card-skill .number h4 span {
+  font-size: 1.2rem;
+}
+
+.card-skill .title h3 {
+  font-size: 1.2rem;
+}
+
+
 @media (max-width: 767px) {
   .jumbotron .col-md-7 {
     order: 1;
@@ -108,4 +163,14 @@ h6 span {
   #about img {
     margin-bottom: 2rem;
   }
+}
+
+@media (min-width: 992px) {
+  #skills .container {
+      max-width: 800px;
+    }
+  .card-skill:nth-child(1),
+  .card-skill:nth-child(2) {
+      margin-bottom: 2rem;
+    }
 }
