@@ -1,4 +1,3 @@
-/* Navbar */
 /* Global */
 html {
   scroll-behavior: smooth;
@@ -112,6 +111,10 @@ h6 span {
 .jumbotron img {
   border-radius: 50%;
   border: 6px solid #e2e2e2;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent !important;
 }
 
 /* About */
