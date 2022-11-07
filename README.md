@@ -23,4 +23,4 @@ A simple, responsive, single-page portfolio build with bootstrap to showcase pro
 6. Deploy your new Bootstrap-powered portfolio to GitHub Pages.
 
 ## License
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE.md).
