@@ -21,3 +21,6 @@ A simple, responsive, single-page portfolio build with bootstrap to showcase pro
    - A footer section
 5. Your Bootstrap solution should minimize use of media queries.
 6. Deploy your new Bootstrap-powered portfolio to GitHub Pages.
+
+## License
+This project is open source and available under the [MIT License](LICENSE).
